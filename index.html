@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container card is-centered">
+            <div class="field card-content">
+                <h1 class="title has-text-centered">
+                    Discord Webhook Sender
+                </h1>
+            </div>
+
+            <div class="field card-content">
+                <label class="label has-text-centered">Webhook URL</label>
+                <div class="control">
+                    <input id="wu" class="input" type="text" placeholder="Webhook URL here">
+                </div>
+            </div>
+
+            <div class="field card-content">
+                <label class="label has-text-centered">Webhook Username</label>
+                <div class="control">
+                    <input id="wun" class="input" type="text" placeholder="Webhook Username here">
+                </div>
+            </div>
+
+            <div class="field card-content">
+                <label class="label has-text-centered">Webhook Avatar URL</label>
+                <div class="control">
+                    <input id="wa" class="input" type="text" placeholder="Webhook Avatar URL here">
+                </div>
+            </div>
+
+            <div class="field card-content">
+                <label class="label has-text-centered">Content</label>
+                <div class="control">
+                    <textarea id="content" class="textarea" placeholder="e.g. Hewwo Discowd"></textarea>
+                </div>
+            </div>
+            
+            <div class="field card-content">
+            <button class="button is-link is-fullwidth" onclick="send()">Send</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="/js.js"></script>
+    
+</body>
+</html>
